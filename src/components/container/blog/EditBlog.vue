@@ -37,7 +37,7 @@
 
 <script lang="ts" setup>
 import {reactive, ref, onMounted} from 'vue';
-import {saveOrUpdateApi, insertTagApi, selectByIdApi} from '@/api/blog';
+import {saveOrUpdateApi, selectByIdApi} from '@/api/blog';
 import {ElMessage, type FormInstance} from 'element-plus';
 
 import {useRoute, useRouter} from 'vue-router';
