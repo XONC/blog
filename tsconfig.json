@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@img/*": ["./src/assets/img/*"],
+      "@header/*": ["./src/components/container/header/*"],
+      "@interface/*": ["src/api/interface/*"],
+      "@diary/*": ["./src/components/container/diary/*"],
+      "@blog/*": ["./src/components/container/blog/*"]
+    },
+    "types": ["element-plus/global"]
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
